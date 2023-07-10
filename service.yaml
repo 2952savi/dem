@@ -1,0 +1,13 @@
+---
+# Source: try/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: test
+  labels:
+    web: app
+spec:
+  ports:
+  - port: 80
+  selector:
+    web: app
